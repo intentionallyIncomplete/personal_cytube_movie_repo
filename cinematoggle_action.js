@@ -80,7 +80,7 @@ function toggleChat() {
       // Updated to using GitHack for faster delivery.
         // host: "https://gitcdn.link/cdn/intentionallyIncomplete/quiglys_movie_repo/259f469d860d912862f51efb077ef8e065666a5f/cinematoggle.css",
 
-        host: "https://raw.githack.com/intentionallyIncomplete/quiglys_movie_repo/alpha_changes/cinematoggle.css",
+        host: "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/cinematoggle.css",
         initialize: function() {
             if (CLIENT.cinemaMode) {
                 return
