@@ -80,7 +80,7 @@ function toggleChat() {
       // Updated to using GitHack for faster delivery.
         // host: "https://gitcdn.link/cdn/intentionallyIncomplete/quiglys_movie_repo/259f469d860d912862f51efb077ef8e065666a5f/cinematoggle.css",
 
-        host: "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/cinematoggle.css",
+        host: "https://raw.githack.com/intentionallyIncomplete/quiglys_movie_repo/alpha_changes/cinematoggle.css",
         initialize: function() {
             if (CLIENT.cinemaMode) {
                 return
@@ -131,7 +131,7 @@ function toggleChat() {
         // Added by Quigly
         // Adds HTML span element to the cheat header so emotes can be toggled while in cinemamode.
         updateEmoteBtnLocation()  {
-          $('<span id="emotelistbtn" style="visibility: hidden;" class="label pull-right pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
+          $('<span id="emotelistbtn" style="visibility: hidden;" onClick="EMOTELISTMODAL.modal()" class="label pull-right pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
