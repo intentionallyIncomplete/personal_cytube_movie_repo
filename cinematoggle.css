@@ -27,7 +27,7 @@ body {
 body.cinemachat #drinkbarwrap {
   width: 24% !important;
   z-index: 3001;
-  bottom: 50px !important;
+  /* bottom: 50px !important; */
   position: relative;
 }
 
@@ -62,7 +62,6 @@ body.cinemachat.synchtube #chatwrap { right:0 !important; }
 body.cinemachat #chatwrap #messagebuffer,
 body.cinemachat #chatwrap #userlist {
     height: calc(90% - 59px) !important;
-    background-color: black !important;
 }
 
 body.cinemachat #chatline {
