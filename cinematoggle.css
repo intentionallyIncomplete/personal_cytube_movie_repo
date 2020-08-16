@@ -31,6 +31,10 @@ body.cinemachat #drinkbarwrap {
   position: relative;
 }
 
+body.cinemachat #drinkcount {
+  color: white;
+}
+
 body.cinemachat .inlineemote {
   visibility: visible !important;
   background-color: #2d2d2d;
@@ -62,10 +66,11 @@ body.cinemachat.synchtube #chatwrap { right:0 !important; }
 body.cinemachat #chatwrap #messagebuffer,
 body.cinemachat #chatwrap #userlist {
     height: calc(90% - 59px) !important;
+    background-color: #151B1A;
 }
 
 body.cinemachat #chatline {
-    width:calc(100% - 1px) !important;
+    width: 100% !important;
     position: relative !important;
 }
 body.cinemachat:not(.synchtube) #chatline { left: 0px !important; }
