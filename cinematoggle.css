@@ -4,7 +4,7 @@ body.cinemachat #footer       { display: none; }
 body.cinemachat #currenttitle { display: none; }
 body.cinemachat .toggle-label { display: none; }
 body.cinemachat .dropLabel    { display: none; }
-body.cinemachat #videowrap-header { display: none; }
+/* body.cinemachat #videowrap-header { display: none; } */
 body.cinemachat #controlsrow {  display: none;  }
 body.cinemachat #playlistrow {  display: none;  }
 body.cinemachat .navbar { display: none;  }
