@@ -35,9 +35,24 @@ body.cinemachat #drinkcount {
   color: white;
 }
 
+body.cinemachat #chatheader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 body.cinemachat .inlineemote {
   visibility: visible !important;
+  order: 3;
   background-color: #2d2d2d;
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+body.cinemachat #modflair {
+  order: 4;
+  flex-grow: 3;
+  flex-shrink: 1;
 }
 
 body.cinemachat .modal {
@@ -60,6 +75,7 @@ body.cinemachat #chatwrap {
     height: 80%;
     z-index: 3001 !important;
 }
+
 body.cinemachat:not(.synchtube) #chatwrap { left:0 !important; }
 body.cinemachat.synchtube #chatwrap { right:0 !important; }
 
