@@ -4,7 +4,7 @@ body.cinemachat #footer       { display: none; }
 body.cinemachat #currenttitle { display: none; }
 body.cinemachat .toggle-label { display: none; }
 body.cinemachat .dropLabel    { display: none; }
-body.cinemachat #videowrap-header { display: none; }
+/* body.cinemachat #videowrap-header { display: none; } */
 body.cinemachat #controlsrow {  display: none;  }
 body.cinemachat #playlistrow {  display: none;  }
 body.cinemachat .navbar { display: none;  }
@@ -56,6 +56,10 @@ body.cinemachat #modflair {
   flex-shrink: 1;
 }
 
+body.cinemachat #resize-video-smaller, #resize-video-larger {
+  display: none;
+}
+
 body.cinemachat .label-success {
   background-color: #77b300;
   padding-bottom: .5rem;
@@ -100,10 +104,10 @@ body.cinemachat:not(.synchtube) #chatline { left: 0px !important; }
 body.cinemachat.synchtube #chatline { right: 0px !important; }
 
 body.cinemachat #videowrap .embed-responsive {
-    height: 100% !important;
+    height: 97% !important;
     width: 100% !important;
     bottom: 0 !important;
-    padding: 1% !important;
+    padding-top: .5rem !important;
 }
 
 body.cinemachat:not(.synchtube) #videowrap .embed-responsive { right: 0 !important; }
