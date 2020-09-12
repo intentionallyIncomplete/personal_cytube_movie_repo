@@ -1,7 +1,7 @@
 body.cinemachat #motdwrap     { display: none; }
 body.cinemachat #queue        { display: none; }
 body.cinemachat #footer       { display: none; }
-body.cinemachat #currenttitle { display: none; }
+/* body.cinemachat #currenttitle { display: none; } */
 body.cinemachat .toggle-label { display: none; }
 body.cinemachat .dropLabel    { display: none; }
 /* body.cinemachat #videowrap-header { display: none; } */
