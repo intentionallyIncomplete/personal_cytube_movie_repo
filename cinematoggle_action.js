@@ -13,7 +13,7 @@
 * @preserve
 */
 
-var halloween_theme = "<option value='/custom_themes/halloweenTheme.css'>Halloween</option>";
+var halloween_theme = '<option value="/custom_themes/halloweenTheme.css">Halloween</option>';
 
 "use strict";
 function removeUntilNext() {
