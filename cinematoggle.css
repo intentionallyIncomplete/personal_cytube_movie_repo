@@ -56,6 +56,11 @@ body.cinemachat #modflair {
   flex-shrink: 1;
 }
 
+body.cinemachat .label-success {
+  background-color: #77b300;
+  padding-bottom: .5rem;
+}
+
 body.cinemachat .modal {
   z-index: 3002;
 }
@@ -63,6 +68,7 @@ body.cinemachat .modal {
 body.cinemachat #cinematoggle {
     text-shadow: 0 0 3px white;
 }
+
 body.cinemachat.synchtube #cinematoggle {
     right: 402px;
 }
