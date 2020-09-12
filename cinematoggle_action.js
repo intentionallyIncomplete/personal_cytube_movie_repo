@@ -131,7 +131,14 @@ function toggleChat() {
         // Added by Quigly
         // Adds HTML span element to the cheat header so emotes can be toggled while in cinemamode.
         updateEmoteBtnLocation()  {
-          $('<span id="emotelistbtn" style="visibility: hidden;" onClick="EMOTELISTMODAL.modal()" class="label pull-right pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
+          $('<span id="emotelistbtn" style="visibility: hidden;" onClick="EMOTELISTMODAL.modal()" class="label pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
+        },
+        // Added by Quigly
+        // Removes the 'pull-right' attribute from they
+        // buttons because they're no longer effective with
+        //the new flex attributes.
+        removeFloatAttribute() {
+          $(".label-success").removeAttribute("pull-right");
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
@@ -139,6 +146,7 @@ function toggleChat() {
                 this.createStyle(data);
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
+                this.removeFloatAttribute();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
