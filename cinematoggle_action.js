@@ -133,12 +133,20 @@ function toggleChat() {
         updateEmoteBtnLocation()  {
           $('<span id="emotelistbtn" style="visibility: hidden;" onClick="EMOTELISTMODAL.modal()" class="label pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
         },
+        // Added by Quigly
+        // Removes the 'pull-right' attribute from they
+        // buttons because they're no longer effective with
+        //the new flex attributes.
+        removeFloatAttribute() {
+          $(".label-success").removeAttribute("pull-right");
+        },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
                 this.createButtons();
                 this.createStyle(data);
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
+                this.removeFloatAttribute();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
