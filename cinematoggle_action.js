@@ -150,7 +150,7 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         addThemes() {
-          $("#us-theme").appendChild(halloween_theme);
+          $("#us-theme").append(halloween_theme);
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
