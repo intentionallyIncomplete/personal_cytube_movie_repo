@@ -148,10 +148,11 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         addThemes() {
-          var hween_theme = document.createElement("option");
-          hween_theme.text = "Halloween";
-          hween_theme.value = "/custom_themes/halloween_theme.css";
-          $("#us-theme")[0].append(hween_theme);
+          // var hween_theme = document.createElement("option");
+          // hween_theme.text = "Halloween";
+          // hween_theme.value = "/custom_themes/halloween_theme.css";
+          $("#us-theme")[0].append('<option value="/custom_themes/halloween_theme.css">Halloween</option>');
+          $("#us-theme").append('<option value="/custom_themes/halloween_theme.css">Halloween</option>');
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
