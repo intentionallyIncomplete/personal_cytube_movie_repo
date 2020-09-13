@@ -72,6 +72,12 @@ function toggleChat() {
     $("#videowrap").css("margin-bottom", "");
     $('a[onclick*="toggleChat"]').text("Remove Chat")
 }
+function addThemes() {
+  var hween_theme = document.createElement("option");
+  hween_theme.text = "Halloween";
+  hween_theme.value = "/custom_themes/halloween_theme.css";
+  $("#us-theme")[0].append(hween_theme);
+}
 (function(CyTube_Layout) {
     return CyTube_Layout(window, document, window.jQuery, String)
 }
@@ -147,13 +153,9 @@ function toggleChat() {
         removeFloatAttribute() {
           $(".label-success").removeAttribute("pull-right");
         },
-        addThemes() {
-          var themeSelector = document.getElementById("us-theme");
-          var hween_theme = document.createElement("option");
-          hween_theme.text = "Halloween";
-          hween_theme.value = "/custom_themes/halloween_theme.css";
-          themeSelector.add(hween_theme);
-        },
+        // addThemes() {
+        //
+        // },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
                 this.createButtons();
@@ -161,7 +163,7 @@ function toggleChat() {
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
                 this.removeFloatAttribute();
-                this.addThemes();
+                // this.addThemes();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
