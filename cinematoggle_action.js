@@ -13,7 +13,7 @@
 * @preserve
 */
 
-var halloween_theme = '<option value="/custom_themes/halloweenTheme.css">Halloween</option>';
+HALLWEEN_THEME = '<option value="custom_themes/halloweenTheme.css">Halloween</option>';
 
 "use strict";
 function removeUntilNext() {
@@ -150,7 +150,8 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         addThemes() {
-          $("#us-theme").parent().append(halloween_theme);
+          var themeSelector = $("#us-theme");
+          themeSelector.add(HALLWEEN_THEME);
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
