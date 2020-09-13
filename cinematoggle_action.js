@@ -148,7 +148,7 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         addThemes() {
-          var themeSelector = $('<select class="form-control" id="us-theme">');
+          var themeSelector = document.getElementById("us-theme");
           var hween_theme = document.createElement("option");
           hween_theme.text = "Halloween";
           hween_theme.value = "/custom_themes/halloween_theme.css";
