@@ -13,8 +13,6 @@
 * @preserve
 */
 
-HALLWEEN_THEME = '<option value="custom_themes/halloweenTheme.css">Halloween</option>';
-
 "use strict";
 function removeUntilNext() {
     socket.once("changeMedia", unremoveVideo);
@@ -151,7 +149,10 @@ function toggleChat() {
         },
         addThemes() {
           var themeSelector = $("#us-theme");
-          themeSelector.add(HALLWEEN_THEME);
+          var hween_theme = document.createElement("option");
+          hween_theme.text = "Halloween";
+          hween_theme.value = "/custom_themes/halloween_theme.css";
+          themeSelector.add(hween_theme);
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
@@ -160,6 +161,7 @@ function toggleChat() {
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
                 this.removeFloatAttribute();
+                this.addThemes();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
