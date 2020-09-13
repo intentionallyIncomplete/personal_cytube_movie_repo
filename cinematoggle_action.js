@@ -147,6 +147,10 @@ function toggleChat() {
         removeFloatAttribute() {
           $(".label-success").removeAttribute("pull-right");
         },
+        createThemeSelector(){
+          console.log($("#us-theme"));
+          console.log($("#us-general").childNodes[0][1]);
+        },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
                 this.createButtons();
@@ -154,6 +158,7 @@ function toggleChat() {
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
                 this.removeFloatAttribute();
+                this.createThemeSelector();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
@@ -164,8 +169,3 @@ function toggleChat() {
         }
     }).initialize()
 });
-
-function createThemeSelector(){
-  console.log($("#us-theme"));
-  console.log($("#us-general").childNodes[0][1]);
-}
