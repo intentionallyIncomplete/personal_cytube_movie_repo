@@ -148,8 +148,7 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         createThemeSelector(){
-          console.log($("#us-theme"));
-          console.log($("#us-general").childNodes[0][1]);
+          console.log($("#us-general")[0].childNodes[1].childNodes[0].childNodes[1].childNodes[0]);
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
