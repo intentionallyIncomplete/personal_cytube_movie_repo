@@ -148,7 +148,9 @@ function toggleChat() {
           $(".label-success").removeAttribute("pull-right");
         },
         createThemeSelector(){
-          console.log($("#us-general")[0].childNodes[1].childNodes[0].childNodes[1].childNodes[0]);
+          var temp = $("#us-general")[0].childNodes[1].childNodes[0].childNodes[1].childNodes[0];
+          var temp2 = document.createElement("option");
+          temp.append(temp2);
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
