@@ -13,6 +13,8 @@
 * @preserve
 */
 
+$("$us-theme").hide();
+
 "use strict";
 function removeUntilNext() {
     socket.once("changeMedia", unremoveVideo);
@@ -144,13 +146,8 @@ function toggleChat() {
         // Removes the 'pull-right' attribute from they
         // buttons because they're no longer effective with
         //the new flex attributes.
-        removeFloatAttribute() {
-          $(".label-success").removeAttribute("pull-right");
-        },
-        createThemeSelector(){
-          var temp = $("#us-general")[0].childNodes[1].childNodes[0].childNodes[1].childNodes[0];
-          var temp2 = document.createElement("option");
-          temp.append(temp2);
+        removeFloatClass() {
+          $(".label-success").removeClass("pull-right");
         },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
@@ -158,8 +155,7 @@ function toggleChat() {
                 this.createStyle(data);
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
-                this.removeFloatAttribute();
-                this.createThemeSelector();
+                this.removeFloatClass();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
