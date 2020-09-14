@@ -156,7 +156,7 @@ function toggleChat() {
                 this.createStyle(data);
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
-                this.removeFloatClass();
+                // this.removeFloatClass();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
