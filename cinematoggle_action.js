@@ -15,6 +15,7 @@
 
 $("#us-theme").hide();
 
+
 "use strict";
 function removeUntilNext() {
     socket.once("changeMedia", unremoveVideo);
@@ -146,9 +147,9 @@ function toggleChat() {
         // Removes the 'pull-right' attribute from they
         // buttons because they're no longer effective with
         //the new flex attributes.
-        removeFloatClass() {
-          $(".label-success").removeClass("pull-right");
-        },
+        // removeFloatClass() {
+        //   $(".label-success").removeClass("pull-right");
+        // },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
                 this.createButtons();
