@@ -13,7 +13,7 @@
 * @preserve
 */
 
-$("$us-theme").hide();
+$("#us-theme").hide();
 
 "use strict";
 function removeUntilNext() {
