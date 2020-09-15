@@ -32,7 +32,7 @@ let themesArray = [
 ];
 
 for (i in themesArray) {
-		$("#us-theme").parent().append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
+		$("#us-theme").append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
 	}
 
 "use strict";
