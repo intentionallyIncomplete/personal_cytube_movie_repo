@@ -1,9 +1,4 @@
 /* General styling. */
-@import "/css/themes/slate.css";
-@import "/css/themes/cyborg.css";
-@import "/css/themes/light.css";
-@import "/css/themes/bootstrap-min.css";
-@import url("https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css");
 
 body {
   background-image: url("https://w.wallhaven.cc/full/47/wallhaven-47w99o.jpg") !important;
