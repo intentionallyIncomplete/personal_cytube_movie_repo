@@ -13,22 +13,27 @@
 * @preserve
 */
 
-// $("#us-theme").hide();
-let themeSelector = $("#us-theme");
+// Hide default list of themes.
+// Store general options tab in a variable.
+// Create a select element and set ID attribute.
+$("#us-theme").hide();
+let genOptTab = $("#us-general");
+let themeSelector = document.createElement("select");
+themeSelector.setAttribute("id","theme-list");
+
+// 2D array for storing values of theme options
+// that are for the custom theme selection dropdown.
 let themesArray = [
-  ['Light','/css/themes/light.css'],
-  ['Bootstrap','/css/themes/bootstrap-theme.min.css'],
-  ['Slate','/css/themes/slate.css'],
-  ['Cyborg','/css/themes/cyborg.css'],
-  ['Halloween','/custom_themes/halloween_theme.css']
+  ['Light', '/css/themes/light.css'],
+  ['Bootstrap', '/css/themes/bootstrap-theme.min.css'],
+  ['Slate', '/css/themes/slate.css'],
+  ['Cyborg', '/css/themes/cyborg.css'],
+  ['Halloween', '/custom_themes/halloween_theme.css']
 ];
 
-for (theme in themesArray) {
-  var themeOption = document.createElement("option");
-  themeOption.text = themesArray[theme[0]];
-  themeOption.value = themesArray[theme[1]];
-  themeSelector.append(themeOption);
-}
+for (i in themesArray) {
+		themeSelector.append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
+	}
 
 
 "use strict";
