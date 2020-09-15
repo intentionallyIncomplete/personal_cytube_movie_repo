@@ -13,9 +13,10 @@
 * @preserve
 */
 
-function setUserCSS(){
-  
-}
+// function setUserCSS(){
+//   $("#chanexternalcss").detach().appendTo("head");
+//
+// }
 let hween = document.createElement("option");
 
 hween.text = "Halloween";

@@ -1,9 +1,8 @@
 /* General styling. */
 
 #wrap {
-  background-image: url("https://w.wallhaven.cc/full/47/wallhaven-47w99o.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("https://w.wallhaven.cc/full/47/wallhaven-47w99o.jpg") !important;
+  background-size: cover !important;
   min-height: 100%;
   height: auto;
   margin: 0 auto -60px;
