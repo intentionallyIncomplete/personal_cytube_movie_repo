@@ -13,8 +13,10 @@
 */
 @import "cytube.css";
 
+.userlist_item span {
+  text-shadow: 2px 2px red;
+}
 
-
-p {
-  color: red;
+#chatwrap border {
+  box-shadow: 2px 2px green;
 }
