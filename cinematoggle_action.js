@@ -13,27 +13,14 @@
 * @preserve
 */
 
-// Hide default list of themes.
-// Store general options tab in a variable.
-// Create a select element and set ID attribute.
 $("#us-theme").hide();
-// let selectorLocation = $("#us-general .form-horizontal .form-group .col-sm-8");
-// let themeSelector = document.createElement("select");
-// themeSelector.setAttribute("id","theme-list");
+let hween = document.createElement("option");
 
-// 2D array for storing values of theme options
-// that are for the custom theme selection dropdown.
-let themesArray = [
-  ['Light', '/css/themes/light.css'],
-  ['Bootstrap', '/css/themes/bootstrap-theme.min.css'],
-  ['Slate', '/css/themes/slate.css'],
-  ['Cyborg', '/css/themes/cyborg.css'],
-  ['Halloween', 'https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css']
-];
+hween.text = "Halloween";
+hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
 
-for (i in themesArray) {
-		$("#us-theme").append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
-	}
+$("#us-theme").append(hween);
+
 
 "use strict";
 function removeUntilNext() {
