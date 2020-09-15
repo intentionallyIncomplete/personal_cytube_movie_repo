@@ -28,13 +28,12 @@ let themesArray = [
   ['Bootstrap', '/css/themes/bootstrap-theme.min.css'],
   ['Slate', '/css/themes/slate.css'],
   ['Cyborg', '/css/themes/cyborg.css'],
-  ['Halloween', '/custom_themes/halloween_theme.css']
+  ['Halloween', 'https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css']
 ];
 
 for (i in themesArray) {
 		themeSelector.append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
 	}
-
 
 "use strict";
 function removeUntilNext() {
