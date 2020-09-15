@@ -17,7 +17,7 @@
 // Store general options tab in a variable.
 // Create a select element and set ID attribute.
 $("#us-theme").hide();
-var selectorLocation = $("#us-general .form-horizontal .form-group .col-sm-8");
+let selectorLocation = $("#us-general .form-horizontal .form-group .col-sm-8");
 let themeSelector = document.createElement("select");
 themeSelector.setAttribute("id","theme-list");
 
@@ -33,9 +33,8 @@ let themesArray = [
 
 for (i in themesArray) {
 		themeSelector.append('<option value="'+themesArray[i][1]+'">'+themesArray[i][0]+'</option>');
+    selectorLocation.append(themeSelector);
 	}
-
-selectorLocation.appendChild(themeSelector);
 
 "use strict";
 function removeUntilNext() {
