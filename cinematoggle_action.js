@@ -6,14 +6,28 @@
 **@preserve
 */
 // Minor modifications made by Quigly for the BadMovies Cytube channel.
-
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 /*!
 * Custom Theme Injection by Quigly the Archivist
 * This script adds custom theme options to the already existing default ones.
 * @preserve
 */
 
-$("#us-theme").hide();
+// $("#us-theme").hide();
+let themeSelector = $("#us-theme");
+let themesArray = [
+  ['Light','/css/themes/light.css'],
+  ['Bootstrap','/css/themes/bootstrap-theme.min.css'],
+  ['Slate','/css/themes/slate.css'],
+  ['Cyborg','/css/themes/cyborg.css']
+];
+
+for (theme in themesArray) {
+  var themeOption = document.createElement("option");
+  themeOption.text = themesArray[theme[0]];
+  themeOption.value = themesArray[theme[1]];
+  themeSelector.append(themeOption);
+}
 
 
 "use strict";

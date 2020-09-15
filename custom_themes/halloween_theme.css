@@ -1,3 +1,20 @@
+/* Custom theme by Quigly the Archivist
+* These custom styles are intended to create a
+* Halloween inspired effect.
+*
+* Version 2020.9.14
+*/
+
+/* Constants */
+
+
+/* IMPORTS
+* (Needed for the general layout style rules)
+*/
+@import "cytube.css";
+
+
+
 p {
   color: red;
 }
