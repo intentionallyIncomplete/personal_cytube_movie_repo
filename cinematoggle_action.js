@@ -13,19 +13,12 @@
 * @preserve
 */
 
-// function setUserCSS(){
-//   $("#chanexternalcss").detach().appendTo("head");
-//
-// }
 let hween = document.createElement("option");
 
 hween.text = "Halloween";
 hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
 
 $("#us-theme").append(hween);
-
-
-
 
 
 /*____________________________________*/

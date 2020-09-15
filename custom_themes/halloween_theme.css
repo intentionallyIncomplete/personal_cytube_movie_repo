@@ -11,11 +11,22 @@
 /* IMPORTS
 * (Needed for the general layout style rules)
 */
-@import "/cytube.css";
-@import "../general_styling.css";
+@import "../cytube.css";
 
-.userlist_item span {
-  text-shadow: 2px 2px 5px orange;
+.userlist_siteadmin {
+  text-shadow: 2px 2px 5px #cc0000;
+}
+
+.userlist_siteowner {
+  text-shadow: 2px 2px 5px #0000cc;
+}
+
+.userlist_op {
+  text-shadow: 2px 2px 5px #00aa00;
+}
+
+.userlist_guest {
+  text-shadow: 2px 2px 5px #888888;
 }
 
 #chatwrap border {
