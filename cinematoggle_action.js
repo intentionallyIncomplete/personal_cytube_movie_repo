@@ -13,7 +13,6 @@
 * @preserve
 */
 
-$("#us-theme").hide();
 let hween = document.createElement("option");
 
 hween.text = "Halloween";
