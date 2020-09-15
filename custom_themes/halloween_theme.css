@@ -11,7 +11,8 @@
 /* IMPORTS
 * (Needed for the general layout style rules)
 */
-@import "cytube.css";
+@import "/cytube.css";
+@import "../general_styling.css";
 
 .userlist_item span {
   text-shadow: 2px 2px red;

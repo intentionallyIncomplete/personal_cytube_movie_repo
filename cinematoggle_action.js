@@ -13,6 +13,9 @@
 * @preserve
 */
 
+function setUserCSS(){
+  
+}
 let hween = document.createElement("option");
 
 hween.text = "Halloween";
@@ -21,6 +24,12 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
 $("#us-theme").append(hween);
 
 
+
+
+
+/*____________________________________*/
+//  BEGIN CINEMA-MODE CONFIGURATION  //
+/*____________________________________*/
 "use strict";
 function removeUntilNext() {
     socket.once("changeMedia", unremoveVideo);

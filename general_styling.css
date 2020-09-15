@@ -1,4 +1,6 @@
-#wrap {
+/* General styling. */
+
+body {
   background-image: url("https://w.wallhaven.cc/full/47/wallhaven-47w99o.jpg") cover no-repeat;
   min-height: 100%;
   height: auto;
