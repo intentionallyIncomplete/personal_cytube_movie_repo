@@ -18,5 +18,9 @@
 }
 
 #chatwrap border {
+  box-shadow: 2px 2px gray;
+}
+
+#chatwrap .server-msg-reconnect {
   box-shadow: 2px 2px green;
 }
