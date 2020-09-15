@@ -19,7 +19,8 @@ let themesArray = [
   ['Light','/css/themes/light.css'],
   ['Bootstrap','/css/themes/bootstrap-theme.min.css'],
   ['Slate','/css/themes/slate.css'],
-  ['Cyborg','/css/themes/cyborg.css']
+  ['Cyborg','/css/themes/cyborg.css'],
+  ['Halloween','/custom_themes/halloween_theme.css']
 ];
 
 for (theme in themesArray) {
