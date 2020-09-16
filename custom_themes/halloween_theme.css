@@ -18,23 +18,28 @@ body {
   background-size: 100% !important;
 }
 
+.userlist_item {
+    color: inherit;
+    text-shadow: 0 0 10px #77ccff !important;
+}
+
 .userlist_siteadmin {
-  color: #fda403 !important;
-  text-shadow: 0px 0px 10px !important;
+  color: #add110 !important;
+  /* text-shadow: 0px 0px 10px !important; */
 }
 
 .userlist_owner {
-  color: #c51350 !important;
-  text-shadow: 0px 0px 10px !important;
+  color: #ff0000 !important;
+  /* text-shadow: 0px 0px 10px #77ccff !important; */
 }
 
 .userlist_op {
   color: #009900 !important;
-  text-shadow: 0px 0px 10px !important;
+  /* text-shadow: 0px 0px 10px !important; */
 }
 
 .userlist_guest {
-  text-shadow: 0px 0px 10px #888888;
+  /* text-shadow: 0px 0px 10px #888888; */
 }
 
 #chatheader {
