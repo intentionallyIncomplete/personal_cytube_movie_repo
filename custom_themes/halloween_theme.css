@@ -12,6 +12,7 @@
 * (Needed for the general layout style rules)
 */
 @import "../cytube.css";
+@import "../general_styling.css";
 
 .userlist_siteadmin {
   text-shadow: 0px 0px 10px #cc0000;
