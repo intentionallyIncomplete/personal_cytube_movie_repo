@@ -95,8 +95,6 @@ function toggleChat() {
         $('a[onclick*="chatOnly"]').parent().after($("<li>").append($("<a>").attr("href", "javascript:void(0)").attr("onclick", "javascript:toggleChat()").text("Remove Chat")))
     }
     ({
-      // Updated to using GitHack for faster delivery.
-        // host: "https://gitcdn.link/cdn/intentionallyIncomplete/quiglys_movie_repo/259f469d860d912862f51efb077ef8e065666a5f/cinematoggle.css",
 
         host: "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/cinematoggle.css",
         initialize: function() {
@@ -151,20 +149,12 @@ function toggleChat() {
         updateEmoteBtnLocation()  {
           $('<span id="emotelistbtn" style="visibility: hidden;" onClick="EMOTELISTMODAL.modal()" class="label pointer inlineemote">Emotes <span class="glyphicon glyphicon-picture"></span></span>').appendTo("#chatheader");
         },
-        // Added by Quigly
-        // Removes the 'pull-right' attribute from they
-        // buttons because they're no longer effective with
-        //the new flex attributes.
-        // removeFloatClass() {
-        //   $(".label-success").removeClass("pull-right");
-        // },
         loadStyle: function() {
             $.ajax(this.host).done((data=>{
                 this.createButtons();
                 this.createStyle(data);
                 this.registerCommand();
                 this.updateEmoteBtnLocation();
-                // this.removeFloatClass();
                 if (localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`) !== null) {
                     if (parseInt(localStorage.getItem(`${CHANNEL.name}_cinemaHidePolls`))) {
                         $("body").addClass("cinema-nopoll")
