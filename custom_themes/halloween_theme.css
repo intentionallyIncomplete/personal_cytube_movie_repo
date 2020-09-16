@@ -14,9 +14,8 @@
 @import "../cytube.css";
 
 body {
-  background-image: url("/bg/red_skull_bg.jpg") !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
+  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/bg/red_skull_bg.jpg") !important;
+  background-size: 100% !important;
 }
 
 .userlist_siteadmin {
