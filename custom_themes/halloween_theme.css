@@ -19,17 +19,17 @@ body {
 }
 
 .userlist_siteadmin {
-  color: #d2e603 !important;
+  /* color: #f89d13 !important; */
   text-shadow: 0px 0px 10px !important;
 }
 
 .userlist_owner {
-  color: #ff0000 !important;
+  /* color: #8f1d14 !important; */
   text-shadow: 0px 0px 10px !important;
 }
 
 .userlist_op {
-  color: #00aa00 !important;
+  /* color: #009900 !important; */
   text-shadow: 0px 0px 10px !important;
 }
 
