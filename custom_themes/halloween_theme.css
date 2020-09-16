@@ -15,15 +15,18 @@
 @import "../general_styling.css";
 
 .userlist_siteadmin {
-  text-shadow: 0px 0px 10px #cc0000;
+  color: #cc0000 !important
+  text-shadow: 0px 0px 10px #cc0000 !important;
 }
 
-.userlist_siteowner {
-  text-shadow: 0px 0px 10px #0000cc;
+.userlist_owner {
+  color: #0000cc !important;
+  text-shadow: 0px 0px 10px #0000cc !important;
 }
 
 .userlist_op {
-  text-shadow: 0px 0px 10px #00aa00;
+  color: #00aa00 !important;
+  text-shadow: 0px 0px 10px #00aa00 !important;
 }
 
 .userlist_guest {
