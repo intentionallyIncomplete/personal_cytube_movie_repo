@@ -20,7 +20,6 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
 
 $("#us-theme").append(hween);
 
-
 /*____________________________________*/
 //  BEGIN CINEMA-MODE CONFIGURATION  //
 /*____________________________________*/

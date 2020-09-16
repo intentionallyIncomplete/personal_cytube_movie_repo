@@ -12,7 +12,6 @@
 * (Needed for the general layout style rules)
 */
 @import "../cytube.css";
-@import "../general_styling.css";
 
 body {
   background-image: url("/bg/red_skull_bg.jpg") !important;
@@ -21,28 +20,28 @@ body {
 }
 
 .userlist_siteadmin {
-  color: #ff9900 !important;
-  text-shadow: 0px 0px 10px #ff9900 !important;
+  color: #d2e603 !important;
+  text-shadow: 0px 0px 10px !important;
 }
 
 .userlist_owner {
-  color: #0000cc !important;
-  text-shadow: 0px 0px 10px #0000cc !important;
+  color: #ff0000 !important;
+  text-shadow: 0px 0px 10px !important;
 }
 
 .userlist_op {
   color: #00aa00 !important;
-  text-shadow: 0px 0px 10px #00aa00 !important;
+  text-shadow: 0px 0px 10px !important;
 }
 
 .userlist_guest {
   text-shadow: 0px 0px 10px #888888;
 }
 
-#chatwrap {
-  box-shadow: 0px 0px 10px gray;
+#chatheader {
+  box-shadow: 0px 0px 10px !important;
 }
 
 #chatwrap .server-msg-reconnect {
-  box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px !important;
 }
