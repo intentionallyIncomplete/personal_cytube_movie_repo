@@ -15,8 +15,8 @@
 @import "../general_styling.css";
 
 .userlist_siteadmin {
-  color: #cc0000 !important
-  text-shadow: 0px 0px 10px #cc0000 !important;
+  color: #ff9900 !important;
+  text-shadow: 0px 0px 10px #ff9900 !important;
 }
 
 .userlist_owner {
