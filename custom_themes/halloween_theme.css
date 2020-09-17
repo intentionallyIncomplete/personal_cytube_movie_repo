@@ -12,14 +12,20 @@
 * (Needed for the general layout style rules)
 */
 @import "../cytube.css";
+@import "../cinematoggle.css";
 
 body {
-  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/bg/red_skull_bg.jpg") !important;
-  background-size: 100% !important;
+  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/bg/red_skull_bg.jpg");
+  background-size: cover;
+  background-blend-mode: hard-light;
 }
 
 .userlist_item {
-    text-shadow: 0px 0px 10px #77ccff !important;
+    text-shadow: 0px 0px 5px;
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/2068/2068494.svg);
+    background-size: 25px;
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .userlist_siteadmin {
@@ -34,6 +40,7 @@ body {
 
 .userlist_op {
   color: #009900 !important;
+  font-weight: bold;
   /* text-shadow: 0px 0px 10px !important; */
 }
 
@@ -47,4 +54,15 @@ body {
 
 #chatwrap .server-msg-reconnect {
   box-shadow: 0px 0px 10px !important;
+}
+
+#userlist, #messagebuffer {
+  background-color: rgba(39, 33, 33, 0.99);
+  box-shadow: 0 0 10px !important;
+}
+
+#motdwrap {
+  background-color: rgba(39, 33, 33, 0.99);
+  box-shadow: 0 0 10px rgba(52, 255, 171);
+  text-shadow: 0 0 5px rgba(255,0,88);
 }
