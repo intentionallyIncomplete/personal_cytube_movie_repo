@@ -56,7 +56,7 @@ body.cinemachat #modflair {
   flex-shrink: 1;
 }
 
-body.cinemachat #resize-video-smaller, #resize-video-larger {
+body.cinemachat #resize-video-smaller, body.cinemachat #resize-video-larger {
   display: none;
 }
 

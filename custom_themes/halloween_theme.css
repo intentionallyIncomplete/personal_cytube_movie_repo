@@ -21,6 +21,10 @@ body {
 
 .userlist_item {
     text-shadow: 0 0 7px !important;
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/2068/2068566.svg");
+    background-size: 25px;
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .userlist_siteadmin {
@@ -43,10 +47,20 @@ body {
   /* text-shadow: 0px 0px 10px #888888; */
 }
 
+#userlist, #messagebuffer {
+  background-color: rgba(39, 33, 33, 0.99);
+}
+
 #chatheader {
   box-shadow: 0px 0px 10px !important;
 }
 
 #chatwrap .server-msg-reconnect {
   box-shadow: 0px 0px 10px !important;
+}
+
+#motdwrap {
+  background-color: rgba(39, 33, 33, 0.99);
+  box-shadow: 0 0 10px rgba(52, 255, 171);
+  text-shadow: 0 0 5px rgba(255,0,88);
 }
