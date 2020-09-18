@@ -26,13 +26,12 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
 
 $("#us-theme").append(hween);
 
-var curr_theme = USEROPTS.theme.toString();
-
 $("#us-theme").on("change", function(){
-  if(curr_theme == hween.value){
-    $("body").toggleClass("hween");
+  var curr_theme = USEROPTS.theme.toString();
+  if(curr_theme !== hween.value){
+    $("body").removeClass("hween");
   }else {
-    return;
+    $("body").addClass("hween");
   }
 });
 
