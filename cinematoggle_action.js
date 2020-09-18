@@ -25,9 +25,14 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
   //  $("#userlist_afk").append(afkEye);
 
 $("#us-theme").append(hween);
+
+var curr_theme = USEROPTS.theme.toString();
+
 $("#us-theme").on("change", function(){
-  if(!$("body").hasClass("hween")){
+  if(curr_theme == hween.value){
     $("body").toggleClass("hween");
+  }else {
+    return;
   }
 });
 
