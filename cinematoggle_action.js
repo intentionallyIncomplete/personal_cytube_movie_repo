@@ -60,7 +60,6 @@ if(curr_usertheme.href == hween.value){
  afkEye.setAttribute("class","afk-user")
  $("#userlist_afk").append(afkEye);
 }
-}
 
 /*____________________________________*/
 //  BEGIN CINEMA-MODE CONFIGURATION  //
