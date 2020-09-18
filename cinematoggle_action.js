@@ -17,7 +17,7 @@ let hween = document.createElement("option");
 
 hween.text = "Halloween";
 hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
-hween.onClick(function () {
+hween.click(function () {
   if(!$("body").hasClass("hween")){
     $("body").toggleClass("hween");
   }
