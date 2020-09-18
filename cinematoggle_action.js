@@ -24,16 +24,12 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
   //  afkEye.setAttribute("class","afk-user")
   //  $("#userlist_afk").append(afkEye);
 
-
 $("#us-theme").append(hween);
-
-function toggleHween(){
-  if(USEROPTS.theme = "/css/themes/modern.css"){
-    console.log("modern");
-  }else {
-    console.log("not modern");
+hween.onChange(function (){
+  if(!$("body").hasClass("hween")){
+    $("body").toggleClass("hween");
   }
-}
+});
 
 (function () {
   var c = document.cookie.split(";").map(function (s) {
@@ -63,7 +59,6 @@ function toggleHween(){
     css.setAttribute("href", theme);
     css.setAttribute("id", "usertheme");
     document.head.appendChild(css);
-    toggleHween();
   }
 })();
 
