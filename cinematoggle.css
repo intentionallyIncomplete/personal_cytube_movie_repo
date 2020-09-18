@@ -9,7 +9,7 @@ body.cinemachat #controlsrow {  display: none;  }
 body.cinemachat #playlistrow {  display: none;  }
 body.cinemachat .navbar { display: none;  }
 
-body {
+body.cinemachat {
   background-color: black;
 }
 
