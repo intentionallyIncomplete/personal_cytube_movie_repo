@@ -2,7 +2,7 @@
 * These custom styles are intended to create a
 * Halloween inspired effect.
 *
-* Version 2020.9.14
+* Version 2020.9.17
 */
 
 /* Constants */
@@ -15,7 +15,7 @@
 @import "../cinematoggle.css";
 
 body {
-  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/bg/red_skull_bg.jpg") !important;
+  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/quiglys_movie_repo/master/custom_themes/bg/red_skull_bg.jpg") !important;
   background-size: 100% !important;
 }
 
@@ -26,6 +26,8 @@ body {
     background-position: bottom;
     background-repeat: repeat-x;
 }
+
+.afk-user {width: 2rem;}
 
 .userlist_siteadmin {
   color: #add110 !important;
