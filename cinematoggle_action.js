@@ -17,6 +17,11 @@ let hween = document.createElement("option");
 
 hween.text = "Halloween";
 hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
+hween.onClick(function () {
+  if(!$("body").hasClass("hween")){
+    $("body").toggleClass("hween");
+  }
+});
 
 $("#us-theme").append(hween);
 
@@ -50,18 +55,6 @@ $("#us-theme").append(hween);
     document.head.appendChild(css);
   }
 })();
-
-var curr_usertheme = document.getElementById("usertheme");
-if(curr_usertheme.href == hween.value){
-  if (!$("body").hasClass("hween")) {
-    $("body").toggleClass("hween");
-  }
-   $("span.glyphicon.glyphicon-time").hide();
-   var afkEye = document.createElement("IMG");
-   afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
-   afkEye.setAttribute("class","afk-user")
-   $("#userlist_afk").append(afkEye);
-}
 
 /*____________________________________*/
 //  BEGIN CINEMA-MODE CONFIGURATION  //
