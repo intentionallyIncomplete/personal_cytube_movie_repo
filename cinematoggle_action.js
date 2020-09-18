@@ -53,12 +53,14 @@ $("#us-theme").append(hween);
 
 var curr_usertheme = document.getElementById("usertheme");
 if(curr_usertheme.href == hween.value){
-  $("body").toggleClass("hween");
-  $("span.glyphicon.glyphicon-time").hide();
- var afkEye = document.createElement("IMG");
- afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
- afkEye.setAttribute("class","afk-user")
- $("#userlist_afk").append(afkEye);
+  if (!$("body").hasClass("hween")) {
+    $("body").toggleClass("hween");
+  }
+   $("span.glyphicon.glyphicon-time").hide();
+   var afkEye = document.createElement("IMG");
+   afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
+   afkEye.setAttribute("class","afk-user")
+   $("#userlist_afk").append(afkEye);
 }
 
 /*____________________________________*/
