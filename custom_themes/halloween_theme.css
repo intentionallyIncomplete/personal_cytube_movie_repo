@@ -26,7 +26,9 @@ body {
     background-repeat: repeat-x;
 }
 
-.afk-user {width: 2rem;}
+.afk-user {
+  width: 2rem;
+}
 
 .userlist_siteadmin {
   color: #add110 !important;
