@@ -15,7 +15,7 @@
 @import "../cinematoggle.css";
 
 body {
-  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/quiglys_movie_repo/master/custom_themes/bg/red_skull_bg.jpg") !important;
+  background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/quiglys_movie_repo/master/custom_themes/bg/red_skull_bg.jpg");
   background-size: 100% !important;
 }
 
