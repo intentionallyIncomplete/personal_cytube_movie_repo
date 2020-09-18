@@ -55,10 +55,11 @@ var curr_usertheme = document.getElementById("usertheme");
 if(curr_usertheme.href == hween.value){
   $("body").toggleClass("hween");
   $("span.glyphicon.glyphicon-time").hide();
-  let afk-eye = document.createElement("img");
-  afk-eye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
-  afk-eye.setAttribute("class","afk-user")
-  $("#userlist_afk").append(afk-eye);
+ var afkEye = document.createElement("IMG");
+ afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
+ afkEye.setAttribute("class","afk-user")
+ $("#userlist_afk").append(afkEye);
+}
 }
 
 /*____________________________________*/
