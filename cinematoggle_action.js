@@ -26,14 +26,13 @@ hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_m
 
 $("#us-theme").append(hween);
 
-$("#us-theme").on("change", function(){
-  var curr_theme = USEROPTS.theme.toString();
-  if(curr_theme !== hween.value){
-    $("body").removeClass("hween");
-  }else {
+(function (){
+  if($("#usertheme").attr("href") == hween.value){
     $("body").addClass("hween");
+  }else {
+    $("body").removeClass("hween");
   }
-});
+})();
 
 /*____________________________________*/
 //  BEGIN CINEMA-MODE CONFIGURATION  //
