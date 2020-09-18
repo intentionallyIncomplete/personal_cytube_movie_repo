@@ -47,21 +47,22 @@ $("#us-theme").append(hween);
     css.setAttribute("type", "text/css");
     css.setAttribute("href", theme);
     css.setAttribute("id", "usertheme");
+
+    var curr_usertheme = document.getElementById("usertheme");
+    if(curr_usertheme.href == hween.value){
+      if (!$("body").hasClass("hween")) {
+        $("body").toggleClass("hween");
+      }
+       $("span.glyphicon.glyphicon-time").hide();
+       var afkEye = document.createElement("IMG");
+       afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
+       afkEye.setAttribute("class","afk-user")
+       $("#userlist_afk").append(afkEye);
+    }
+
     document.head.appendChild(css);
   }
 })();
-
-var curr_usertheme = document.getElementById("usertheme");
-if(curr_usertheme.href == hween.value){
-  if (!$("body").hasClass("hween")) {
-    $("body").toggleClass("hween");
-  }
-   $("span.glyphicon.glyphicon-time").hide();
-   var afkEye = document.createElement("IMG");
-   afkEye.setAttribute("src","https://www.flaticon.com/svg/static/icons/svg/2213/2213665.svg");
-   afkEye.setAttribute("class","afk-user")
-   $("#userlist_afk").append(afkEye);
-}
 
 /*____________________________________*/
 //  BEGIN CINEMA-MODE CONFIGURATION  //
