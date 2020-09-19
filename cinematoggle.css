@@ -9,6 +9,8 @@ body.cinemachat #controlsrow {  display: none;  }
 body.cinemachat #playlistrow {  display: none;  }
 body.cinemachat .navbar { display: none;  }
 
+@import "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
+
 body.cinemachat {
   background-color: black;
 }
@@ -107,7 +109,7 @@ body.cinemachat #videowrap .embed-responsive {
     height: 97% !important;
     width: 100% !important;
     bottom: 0 !important;
-    padding: 1% !important;
+    padding: 0.5rem !important;
 }
 
 body.cinemachat:not(.synchtube) #videowrap .embed-responsive { right: 0 !important; }
