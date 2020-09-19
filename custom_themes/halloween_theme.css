@@ -18,7 +18,6 @@ Icons made by <a href="https://www.flaticon.com/free-icon/blood_2068494?term=blo
 * (Needed for the general layout style rules)
 */
 @import "../cytube.css";
-@import "../cinematoggle.css";
 
 body.hween {
   background-image: url("https://raw.githubusercontent.com/intentionallyIncomplete/quiglys_movie_repo/master/custom_themes/bg/red_skull_bg.jpg");
