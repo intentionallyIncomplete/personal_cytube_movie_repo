@@ -14,11 +14,18 @@
 */
 
 let hween = document.createElement("option");
+let cinemaModeNavButton = document.createElement("li")
 
 hween.text = "Halloween";
 hween.value = "https://raw.githack.com/intentionallyIncomplete/personal_cytube_movie_repo/master/custom_themes/halloween_theme.css";
 
 $("#us-theme").append(hween);
+
+
+cinemaModeNavButton.text = "Cinema Mode";
+cinemaModeNavButton.onClick = "javascript:$('#cinematoggle')";
+
+$("#nav-collapsible").append(cinemaModeNavButton);
 
 (function () {
   var c = document.cookie.split(";").map(function (s) {
