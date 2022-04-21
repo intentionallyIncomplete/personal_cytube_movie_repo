@@ -13,7 +13,7 @@
 #logoutform { line-height: 24px; }
 
 #videowrap-header,
-#chatheader { height: 24px; line-height: 24px; padding: 0; border: none; flex-flow: row-reverse wrap; }
+#chatheader { height: 24px; line-height: 24px; padding: 0; border: none; }
 
 #resize-video-smaller,
 #resize-video-larger { display: none; }
@@ -32,7 +32,7 @@
 #chatwrap { flex: 1; display: grid; grid-template-columns: 0fr 1fr; grid-template-rows: 24px 1fr auto; overflow: auto; }
 
 @media (min-aspect-ratio: 1/1){
- #main { flex-direction: row-reverse; }
+ #main { flex-direction: row; }
  #chatwrap { flex: min-content; max-width: 540px }
  #videowrap { flex: 2; max-height: 100%; }
  #videowrap > .embed-responsive { position: relative; padding-bottom: unset; height: calc(100% - 24px); max-height: calc(100% - 24px); }
@@ -40,7 +40,7 @@
 
 #chatheader { grid-column: 1 / 3; grid-row: 1; }
 
-#userlist { grid-column: 3; grid-row: 2; overflow: auto; }
+#userlist { grid-column: 1; grid-row: 2; overflow: auto; }
 
 #usercount { white-space: nowrap; flex-grow: 1; }
 
