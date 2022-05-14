@@ -68,7 +68,7 @@
 
 #modflair { padding: 0 0.5em; font-size: 14px; font-weight: unset; line-height: unset; border-radius: unset; }
 
-#newemotebtn {
+#chatheader > #newemotebtn {
   padding: 0px 2.5rem 0 2.5rem;
   margin-right: 2rem;
   margin-left: 5px;
