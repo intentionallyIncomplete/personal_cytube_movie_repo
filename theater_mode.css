@@ -53,7 +53,6 @@
 
 #motdrow,
 #announcements,
-#drinkbarwrap,
 #controlsrow,
 #resizewrap,
 #sitefooter,
@@ -68,3 +67,18 @@
 #chatline { padding: 0 5px; height: 35px; }
 
 #modflair { padding: 0 0.5em; font-size: 14px; font-weight: unset; line-height: unset; border-radius: unset; }
+
+#newemotebtn {
+  padding: 0px 2.5rem 0 2.5rem;
+  margin-right: 2rem;
+  margin-left: 5px;
+  height: 100%;
+  font-weight: unset;
+  font-size: 14px;
+  line-height: unset;
+}
+
+.drinkWrapToggle #drinkcount {
+  margin: 0;
+  padding: 0.5rem 0 0 1rem;
+}
