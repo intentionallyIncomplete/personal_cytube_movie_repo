@@ -68,7 +68,7 @@
 
 #modflair { padding: 0 0.5em; font-size: 14px; font-weight: unset; line-height: unset; border-radius: unset; }
 
-button#emotelistbtn {
+#emotelistbtn {
   font-weight: unset !important;
   line-height: unset !important;
   padding: 0px 2.5rem 0 2.5rem !important;
@@ -78,7 +78,7 @@ button#emotelistbtn {
   font-size: 14px !important;
 }
 
-.drinkWrapToggle#drinkcount {
-  margin: 0;
-  padding: 0.5rem 0 0 1rem;
+#drinkcount {
+  margin: 0 !important;
+  padding: 0.5rem 0 0 1rem !important;
 }
