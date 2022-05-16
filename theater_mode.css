@@ -78,7 +78,7 @@
   font-size: 14px !important;
 }
 
-#drinkcount {
+h1 #drinkcount {
   background-color: unset !important;
   margin: 0 !important;
   padding: 0.5rem 0 0 1rem !important;
