@@ -60,7 +60,7 @@
 #footer { display: none !important; }
 
 /* Hide login forms */
-#nav-collapsible > div { display: none !important; }
+#logoutform { display: none; }
 
 #guestlogin > .form-control,
 #guestlogin > .input-group-addon,
@@ -78,8 +78,15 @@
   font-size: 14px !important;
 }
 
-h1 #drinkcount {
+#drinkcount {
   background-color: unset !important;
   margin: 0 !important;
   padding: 0.5rem 0 0 1rem !important;
+  text-align: start;
+  font-size: unset;
+}
+
+#drinkbarwrap {
+  display: inherit;
+  float: left;
 }
