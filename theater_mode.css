@@ -68,7 +68,7 @@
 
 #modflair { padding: 0 0.5em; font-size: 14px; font-weight: unset; line-height: unset; border-radius: unset; }
 
-#emotelistbtn #newemotebtn {
+.btn.btn-sm.btn-default {
   font-weight: unset !important;
   line-height: unset !important;
   padding: 0px 2.5rem 0 2.5rem !important;
