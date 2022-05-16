@@ -78,7 +78,8 @@
   font-size: 14px !important;
 }
 
-.drinkCounter {
+#drinkcount {
+  background-color: unset !important;
   margin: 0 !important;
   padding: 0.5rem 0 0 1rem !important;
 }
